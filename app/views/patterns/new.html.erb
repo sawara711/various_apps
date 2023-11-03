@@ -1,0 +1,40 @@
+<%# 共通 %>
+<div class='patterns-page-base'>
+  <div class='patterns-page-header'>
+    <%= render "patterns_header" %>
+  </div>
+
+  <div class='patterns-page-main'>
+    <%# 線画作成 %>
+    <%= form_with model: @pattern, local: true do |f| %>
+
+      <div class="canvas-container">
+        <canvas id="patternCanvas" width="500" height="500"></canvas>
+
+        <%# ツール %>
+        <div class="drawing-tools">
+          <div class="drawing-tool-list">
+            <button type="button" class="patterns-button" onclick="drawMode('free')">手書き</button>
+            <button type="button" class="patterns-button" onclick="drawMode('straightLine')">直線</button>
+            <button type="button" class="patterns-button" onclick="drawMode('erase')">消しゴム</button>
+            <button type="button" class="patterns-button" id="clearAll">全消し</button>
+          </div>
+          <div class="colors">
+            <button type="button" class="color-btn darkblue" onclick="changeColor('#011e41')"></button>
+            <button type="button" class="color-btn pink" onclick="changeColor('#f39bd5')"></button>
+            <button type="button" class="color-btn yellow" onclick="changeColor('#f3eb84')"></button>
+            <button type="button" class="color-btn purple" onclick="changeColor('#7275d5')"></button>
+            <button type="button" class="color-btn sky" onclick="changeColor('#89dcf0')"></button>
+            <button type="button" class="color-btn bluegreen" onclick="changeColor('#2a5e4c')"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="patterns-info-container">
+        <%# イラスト名 %>
+        <%= f.text_field :title, id: "imageTitle", placeholder: " Enter image title", class: "patterns-items-text" %>
+        <button type="button" class="patterns-button save" id="savePattern">Save</button>
+      </div>
+    <% end %>
+  </div>
+</div>
