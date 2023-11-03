@@ -1,0 +1,35 @@
+<%# 共通 %>
+<div class='patterns-page-base'>
+  <div class='patterns-page-header'>
+    <%= render "patterns_header" %>
+  </div>
+
+  <div class='patterns-page-main'>
+    <%# 一覧 %>
+    <%#<div class='patterns-lists-container'>
+    <%#  
+    <%#  <ul class='patterns-lists'>
+    <%#    <% @patterns.each do |pattern| %>
+    <%#        <li class='patterns-list'>
+    <%#
+    <%#            <%# 画像 %>
+    <%#            <div class='patterns-img-content'>
+    <%#              <%= image_tag pattern.picture, class: "patterns-img" %>
+    <%#            </div>
+    <%#        </li>
+    <%#    <% end %>
+    <%#  </ul>
+    <%#
+    <%#</div>
+
+    <%# 固定ボタン %>
+    <%= link_to(new_pattern_path, data: { turbo: false }, class: 'patterns-create-btn') do %>
+      <%= image_tag 'patterns/万年筆の無料アイコン素材.png' , size: '50x50' ,class: "patterns-create-btn-icon" %>
+    <% end %>
+
+    <%= link_to(home_index_path, data: { turbo: false }, class: 'patterns-home-btn') do %>
+      <%= image_tag 'patterns/家のアイコン素材1.png' , size: '50x50' ,class: "patterns-home-btn-icon" %>
+      <span class='patterns-home-txt'>home</span>
+    <% end %>
+  </div>
+</div>
