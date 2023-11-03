@@ -1,0 +1,56 @@
+.pattarn-lists-container{
+  padding: 50px 10px;
+  text-align: center; 
+}
+
+.pattarn-lists{
+  margin: 30px 50px;
+}
+
+/* image */
+.pattern-img-content {
+  width: 150px; /* 画像のサイズ調整 */
+  height: 150px;
+  border: 20px solid white; /* 白ふちを追加 */
+  overflow: hidden; /* 正方形にするため、はみ出る部分を非表示にする */
+  position: relative;
+}
+.pattern-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* btn */
+.patterns-create-btn {
+  width: 50px;
+  position: fixed;
+  top: 100px;
+  right: 30px;
+}
+.patterns-create-btn-icon{
+  width: 100%;
+}
+
+.patterns-home-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  width: 80px;
+  border-radius: 10px;
+  color: #1d3c4d;;
+  text-align: center;
+  font-weight: bold;
+}
+.patterns-home-txt {
+  display: block;
+}
+.patterns-home-btn-icon {
+  width: 60%;
+  margin-top: 5px;
+}
+

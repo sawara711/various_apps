@@ -1,0 +1,35 @@
+
+/* base */
+.patterns-page-base{
+  background-color: #f7edde;
+  width: 100vw;
+  height: 100vh;
+}
+
+.patterns-page-main{
+  background-color: #f7edde;
+  width: 100% ;
+  height: 100vh;
+}
+
+/*       header        */
+/* ヘッダー全体 */
+.patterns-page-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d3c4d;
+  width: 100%;
+  height: 80px;
+}
+/* ヘッダー左 */
+.patterns-logo{
+  display: flex;
+  align-items: center;
+}
+.patterns-top-logo1{
+  width: 50px;
+  margin-left: 1vw;
+}
+.patterns-top-logo2{
+  width: 120px;
+}
