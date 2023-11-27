@@ -1,6 +1,15 @@
-<div class='patterns-page-base'>
 
-  <%= link_to(patterns_path, data: { turbo: false }, class: 'patterns-create-btn') do %>
-    <%= image_tag 'patterns/万年筆の無料アイコン素材.png' , size: '50x50' ,class: "patterns-create-btn-icon" %>
-  <% end %>
+<div class='home-base'>
+  <div class='home-main'>
+
+    <ul>
+      <li>
+        <%= link_to(patterns_path, data: { turbo: false }, class: 'patterns-link') do %>
+        <%= image_tag 'patterns/万年筆の無料アイコン素材.png' , size: '50x50' %>
+        <% end %>
+      </li>
+      <li></li>
+    </ul>
+
+  </div>
 </div>
